@@ -61,9 +61,9 @@ const LoginPage = () => {
         <button className='btn'>sign in</button>
 
         <div className=' flex gap-x-1'>
-          <p className='text-lg text-[#8d8d8d]'> have account ?</p>{""}
-          <Link className='hover:underline' to="/sign in">
-            sign in
+          <p className='text-lg text-[#8d8d8d]'> New to netflix  ?</p>{""}
+          <Link className='hover:underline' to="/Signup">
+            sign up now
           </Link>
         </div>
    </form>

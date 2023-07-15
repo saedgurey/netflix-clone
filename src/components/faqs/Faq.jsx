@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { AiOutlineClose, AiOutlinePlus } from "react-icons/ai";
 
-const Faq = ({ title, description }) => {
+const Faq = ({ title, description}) => {
   const [show, setShow] = useState(false);
   return (
     <div className='mx-auto my-4 flex w-full flex-col space-y-4  sm:max-w-screen-md'>

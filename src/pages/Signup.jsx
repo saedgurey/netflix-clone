@@ -50,9 +50,9 @@ const Signup = () => {
         </lable>
         <button className='btn'>sign up</button>
         <div className=' flex gap-x-1'>
-          <p className='text-lg text-[#8d8d8d]'> New to Netflix ?</p>{""}
+          <p className='text-lg text-[#8d8d8d]'> already had an account?</p>{""}
           <Link className='hover:underline' to="/Login">
-            sign up
+            sign in
           </Link>
         </div>
    </form>

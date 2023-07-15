@@ -1,6 +1,6 @@
-import React from 'react'
+
 import Faq from './Faq';
-import faqsData from '../../content/faq';
+import faqsData from  "../../content/faq"
 
 const Faqs = () => {
   return (
@@ -8,9 +8,10 @@ const Faqs = () => {
         <h1 className='my-6 text-center text-3xl font-semibold sm:text-5xl'>
 				Frequently Asked Questions
 			</h1>
-            {faqsData.map((faq) => (
+      {faqsData.map((faq) => (
 				<Faq key={faq.id} {...faq} />
 			))}
+		
 
     </div>
   )
