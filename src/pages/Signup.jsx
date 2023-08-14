@@ -18,6 +18,8 @@ const Signup = () => {
         const {email, password} = data;
         const userCredentials = await createUserWithEmailAndPassword(auth, email, password);
      alert("seccessfully registered");
+
+   
       }
       catch (err){
         console.log(err)

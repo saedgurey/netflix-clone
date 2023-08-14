@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useForm } from "react-hook-form";
-// import { signInWithEmailAndPassword } from '../config/firebase';
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../config/firebase';
 
 
@@ -20,10 +19,9 @@ const LoginPage = () => {
 
     try{
       const {email, password} = data;
-      const userCredentials = await createUserWithEmailAndPassword(auth, email, password);
-   alert("seccessfully registered");
+      const userCredentials = await signInWithEmailAndPassword(auth, email, password);  
     
-  navigate("/browse");
+      navigate("/browse");
   }
     catch (err){
       console.log(err);
